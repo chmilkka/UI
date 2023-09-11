@@ -1,0 +1,6 @@
+<div *ngIf="taskService.tasks">
+  <app-task
+    *ngFor="let task of taskService.tasks let i = index"
+    [task]="task"
+  ></app-task>
+</div>

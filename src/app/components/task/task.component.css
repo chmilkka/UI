@@ -1,0 +1,21 @@
+.button-container
+{   
+    display: flex;
+    justify-content: flex-end;
+}
+.delete-button
+{
+    width: 40px;
+    height: 40px;
+    box-shadow: none;   
+}
+.delete-button:hover
+{
+    box-shadow: none;
+    background-color: red;
+}
+.delete-button:focus
+{
+    box-shadow: none;   
+}
+

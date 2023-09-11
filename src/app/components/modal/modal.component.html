@@ -1,0 +1,44 @@
+<!-- <div (click)="modalService.close()"></div>
+
+<div class="modal_div">
+  <h2 class="header">{{ title | titlecase }}</h2>
+  <ng-content></ng-content>
+</div> -->
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">New Task</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form [formGroup]= "createForm" (ngSubmit)="onSubmit()">
+			<div class="mb-3">
+				<label for="name">Name</label>
+				<div class="input-group">
+					<input
+					class="input-group"
+						id="name"				
+						formControlName ="name"					
+					/>					
+				</div>
+			</div>
+      <div class="mb-3">
+				<label for="content">Content</label>
+				<div class="input-group">
+					<textarea 
+					class="content-area"
+					id="content" 
+				    formControlName ="content"
+					>					
+					</textarea>
+				</div>      
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="onSubmit()">Save</button>
+	</div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Create new Task</button>
+
+

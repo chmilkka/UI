@@ -1,0 +1,47 @@
+.main_div {
+   
+    width: 500px; 
+    height: 300px; 
+  margin: 0 auto;
+  
+    border: 5px solid black;
+    padding: 30px;
+    background-color: darkgray;
+  }
+.button {
+    margin: 0 auto;
+    
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.login_form
+{
+  width: 254px; 
+  height: 215px; 
+  margin: 0 auto;
+}
+input
+{
+  width: 250px; 
+  height: 30px; 
+  display:block;
+}
+section
+{
+  width: 1200px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.welcome_form
+{
+  font-size: 32px;
+}

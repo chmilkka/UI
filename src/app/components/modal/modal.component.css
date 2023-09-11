@@ -1,0 +1,34 @@
+.modal_div {
+   
+    width: 700px; 
+    height: 500px; 
+  margin: 0 auto;
+  
+    border: 5px solid black;
+   
+    background-color: darkgray;
+  }
+  .header {
+    overflow: hidden;
+    background-color:aqua;
+    padding: 20px 10px;
+    margin-top: 0;
+    text-align:center
+  }
+  .content-area {
+    float: none;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    height: 120px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    resize: none;
+  }
+
+  
